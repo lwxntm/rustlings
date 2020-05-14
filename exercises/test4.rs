@@ -5,7 +5,17 @@
 
 // Write a macro that passes the test! No hints this time, you can do it!
 
-// I AM NOT DONE
+macro_rules! my_macro {
+    ($arg:tt) => {
+        if $arg == "world!" {
+            "Hello world!"
+        } else if $arg == "goodbye!" {
+            "Hello goodbye!"
+        } else {
+            ""
+        }
+    };
+}
 
 #[cfg(test)]
 mod tests {
